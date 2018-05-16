@@ -5,11 +5,11 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        echo 'Hello'
+        echo "Hello ${MY_NAME}!"
       }
     }
   }
   environment {
-    test = '1'
+    MY_NAME = 'Mary'
   }
 }
